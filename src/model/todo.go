@@ -4,7 +4,7 @@ import "github.com/jinzhu/gorm"
 
 type Todo struct {
 	gorm.Model
-	Title       string
+	Title       string `gorm:"not null"`
 	Description string
-	isArchive   bool
+	IsArchive   bool `gorm:"default: false"`
 }

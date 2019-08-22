@@ -1,6 +1,8 @@
 package repository
 
-import "github.com/jinzhu/gorm"
+import (
+	"github.com/jinzhu/gorm"
+)
 
 type TodoRepository interface {
 	Create()
@@ -13,7 +15,6 @@ type DbTodoRepository struct {
 }
 
 func (repository DbTodoRepository) Create() {
-
 }
 
 func (repository DbTodoRepository) Update() {
